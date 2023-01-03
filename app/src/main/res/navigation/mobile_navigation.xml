@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.aotg_v1.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_quiz"
+        android:name="com.example.aotg_v1.ui.quiz.QuizFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_quiz" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.aotg_v1.ui.profile.ProfileFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_profile" />
+    <activity
+        android:id="@+id/BtnPyears"
+        android:name="com.example.aotg_v1.Pyears"
+        android:label="activity_pyears"
+        tools:layout="@layout/activity_pyears" />
+    <activity
+        android:id="@+id/navigation_notes"
+        android:name="com.example.aotg_v1.Notes"
+        android:label="activity_notes"
+        tools:layout="@layout/activity_notes" />
+</navigation>
