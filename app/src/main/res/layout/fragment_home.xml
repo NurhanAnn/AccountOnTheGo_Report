@@ -8,8 +8,9 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="471dp"
-        android:layout_height="301dp"
+        android:layout_width="421dp"
+        android:layout_height="227dp"
+        android:scaleType="fitXY"
         android:src="@drawable/logo_with_bg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
