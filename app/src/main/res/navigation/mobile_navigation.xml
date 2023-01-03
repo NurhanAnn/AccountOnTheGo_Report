@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@id/navigation_home">
 
     <fragment
         android:id="@+id/navigation_home"
@@ -14,13 +14,13 @@
     <fragment
         android:id="@+id/navigation_quiz"
         android:name="com.example.aotg_v1.ui.quiz.QuizFragment"
-        android:label="@string/title_dashboard"
+        android:label="Quiz"
         tools:layout="@layout/fragment_quiz" />
 
     <fragment
         android:id="@+id/navigation_profile"
         android:name="com.example.aotg_v1.ui.profile.ProfileFragment"
-        android:label="@string/title_notifications"
+        android:label="Profile"
         tools:layout="@layout/fragment_profile" />
     <activity
         android:id="@+id/BtnPyears"
