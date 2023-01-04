@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -26,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
     private TextView mTextViewCountDown;
     private Button mButtonStartPause;
-    private Button mButtonReset;
+    private ImageButton mButtonReset;
 
     private CountDownTimer mCountDownTimer;
 
