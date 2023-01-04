@@ -7,7 +7,11 @@
 
     //faq questions strings
     <string name="FAQ_1_q">How to access papers from 2016 and below?</string>
-    <string name="FAQ_1_a">\n\n\nAccount On The GO only focuses on papers that are relevant to current examination format. Thus, papers from more than 5 years ago is not available to access.</string>
-    <string name="FAQ_2_q">Hello blank fragment</string>
-    <string name="FAQ_2_a">Hello blank fragment</string>
+    <string name="FAQ_1_a">Account On The GO only focuses on papers that are relevant to current examination format. Thus, papers from more than 5 years ago is not available to access.</string>
+    <string name="FAQ_2_q">My marks are not displayed even after I finish the quizzes. How to fix this?</string>
+    <string name="FAQ_2_a">The functionality to automatically have your quizzes marks be updated is not yet available in Account On The Go. For now, the users need to manually key in their marks that they got from the quizzes.</string>
+    <string name="FAQ_3_q">I find it difficult to do the practice questions without a formula. Is there anywhere that I can find the compiled lists of formulas?</string>
+    <string name="FAQ_3_a">Yes, it is in the notes section of the app. All the formula for the entire syllabus of accounting is compiled there. But it is highly recommended for you to rewrite the formula on your own to make sure you understand which of the formula is for what question.</string>
+    <string name="FAQ_4_q">Can I upload my notes in the app so that it is easier for me to refer to it while I am doing practice?</string>
+    <string name="FAQ_4_a">Unfortunately, we are still in development of allowing user uploading their own study notes along with tips, extra questions, and own-derived formula. We will be notifying our user as soon as we have the features deployed!</string>
 </resources>
