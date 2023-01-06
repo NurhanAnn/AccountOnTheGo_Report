@@ -11,7 +11,7 @@
         android:layout_height="450dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView7">
+        app:layout_constraintTop_toBottomOf="@+id/cat">
 
         <LinearLayout
             android:id="@+id/linearLayout"
@@ -20,7 +20,7 @@
             android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView7"
+            app:layout_constraintTop_toBottomOf="@+id/cat"
             tools:context=".FAQAskedQuestions">
 
             <androidx.cardview.widget.CardView
@@ -186,7 +186,7 @@
 
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/cat"
         android:layout_width="match_parent"
         android:layout_height="55dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -198,7 +198,7 @@
         android:id="@+id/imageView8"
         android:layout_width="83dp"
         android:layout_height="60dp"
-        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintStart_toStartOf="@+id/cat"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/faq_up" />
 </androidx.constraintlayout.widget.ConstraintLayout>

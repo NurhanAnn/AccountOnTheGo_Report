@@ -7,20 +7,11 @@
     android:orientation="vertical"
     tools:context=".ui.home.HomeFragment">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="fitStart"
-        android:src="@drawable/logo_with_bg"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <Button
         android:id="@+id/BtnPyears"
         android:layout_width="121dp"
         android:layout_height="54dp"
+        android:backgroundTint="#009688"
         android:text="past year"
         app:layout_constraintBottom_toTopOf="@+id/BtnNotes"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,6 +25,7 @@
         android:layout_width="123dp"
         android:layout_height="54dp"
         android:layout_marginBottom="144dp"
+        android:backgroundTint="#009688"
         android:text="Notes"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -46,13 +38,13 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:layout_marginBottom="12dp"
+        android:layout_marginBottom="180dp"
         android:text="00:00"
         android:textColor="@android:color/black"
-        android:textSize="60sp"
-        app:layout_constraintBottom_toTopOf="@+id/button_start_pause"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.873"
+        app:layout_constraintHorizontal_bias="0.793"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -61,8 +53,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/text_view_countdown"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="228dp"
-        android:layout_marginBottom="100dp"
+        android:layout_marginStart="216dp"
+        android:layout_marginBottom="120dp"
+        android:backgroundTint="#009688"
         android:text="start"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -71,148 +64,60 @@
         android:id="@+id/button_reset"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginBottom="116dp"
         android:background="#00FFFFFF"
         android:scaleType="fitXY"
         android:src="@drawable/resetbutton"
         android:text="reset"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.288"
+        app:layout_constraintHorizontal_bias="0.265"
         app:layout_constraintStart_toEndOf="@+id/button_start_pause"
-        app:layout_constraintTop_toBottomOf="@+id/text_view_countdown"
         tools:visibility="visible" />
 
     <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="60dp"
+        android:id="@+id/cat"
+        android:layout_width="146dp"
+        android:layout_height="93dp"
+        android:layout_marginBottom="64dp"
         android:src="@drawable/cat"
         app:layout_constraintBottom_toBottomOf="@+id/text_view_countdown"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.844"
+        app:layout_constraintHorizontal_bias="0.834"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="212dp"
+        android:layout_height="494dp"
+        android:src="@drawable/logopomodoro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.919"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.881" />
 
-<!--    &lt;!&ndash; set layout for slider &ndash;&gt;
-    <RelativeLayout
-        android:layout_width="350dp"
-        android:layout_height="100dp"
-        android:translationY="225dp"
-        tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="10dp"
-        tools:ignore="MissingConstraints">
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="395dp"
+        android:layout_height="95dp"
+        android:layout_centerInParent="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.349"></androidx.viewpager.widget.ViewPager>
 
-        <androidx.viewpager.widget.ViewPager
-            android:id="@+id/viewpager"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_centerInParent="true"
-            android:translationX="-20dp">
-
-        </androidx.viewpager.widget.ViewPager>
-    </RelativeLayout>-->
+    <ImageView
+        android:id="@+id/logobesar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="508dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/logo_with_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-<!--==========================================================-->
-
-  <!--  <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:orientation="vertical"
-tools:context=".ui.home.HomeFragment">
-
-<ImageView
-    android:id="@+id/imageView"
-    android:layout_width="421dp"
-    android:layout_height="227dp"
-    android:layout_marginBottom="504dp"
-    android:scaleType="fitXY"
-    android:src="@drawable/logo_with_bg"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent" />
-
-<Button
-    android:id="@+id/BtnPyears"
-    android:layout_width="121dp"
-    android:layout_height="54dp"
-    android:text="past year"
-    app:layout_constraintBottom_toTopOf="@+id/BtnNotes"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.162"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/imageView"
-    app:layout_constraintVertical_bias="0.949" />
-
-<Button
-    android:id="@+id/BtnNotes"
-    android:layout_width="123dp"
-    android:layout_height="54dp"
-    android:layout_marginBottom="144dp"
-    android:text="Notes"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.156"
-    app:layout_constraintStart_toStartOf="parent" />
-
-<TextView
-    android:id="@+id/text_view_countdown"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_centerHorizontal="true"
-    android:layout_centerVertical="true"
-    android:text="00:00"
-    android:textColor="@android:color/black"
-    android:textSize="60sp"
-    app:layout_constraintBottom_toTopOf="@+id/button_start_pause"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.904"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintVertical_bias="1.0" />
-
-<Button
-    android:id="@+id/button_start_pause"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_below="@+id/text_view_countdown"
-    android:layout_centerHorizontal="true"
-    android:text="start"
-    app:layout_constraintBottom_toTopOf="@+id/button_reset"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.832"
-    app:layout_constraintStart_toStartOf="parent" />
-
-<Button
-    android:id="@+id/button_reset"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_below="@+id/text_view_countdown"
-    android:layout_marginBottom="128dp"
-    android:layout_toEndOf="@+id/button_start_pause"
-    android:text="reset"
-    android:visibility="invisible"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.832"
-    app:layout_constraintStart_toStartOf="parent"
-    tools:visibility="visible" />
-
-<ImageView
-    android:id="@+id/imageView9"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="328dp"
-    android:src="@drawable/cat"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.876"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>-->
