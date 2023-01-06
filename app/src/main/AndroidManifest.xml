@@ -28,13 +28,6 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".TrialSPMRSM_2020"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
             android:name=".FAQ_mainActivity"
             android:exported="false">
             <meta-data
@@ -42,14 +35,14 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".Pyears_spmrsm"
+            android:name=".Pyears3"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".Pyears_spm"
+            android:name=".Pyears2"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
