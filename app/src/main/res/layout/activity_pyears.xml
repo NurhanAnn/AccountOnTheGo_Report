@@ -11,12 +11,13 @@
         android:id="@+id/TVPaper"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="81dp"
+        android:layout_marginTop="120dp"
         android:text="Choose category of past year questions:"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -24,42 +25,28 @@
         android:id="@+id/BtnSPMRSM"
         android:layout_width="200dp"
         android:layout_height="150dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="240dp"
         android:backgroundTint="#8DBBBD"
-        android:drawableTop="@drawable/logo_maktab_rendah_sains_mara__mrsm___2_"
-        android:text="Sijil Pendidikan MRSM (SPMRSM)"
+        android:drawableTop="@drawable/spm_removebg_preview__3_"
+        android:text="TRIAL SPM"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TVPaper" />
-
-    <Button
-        android:id="@+id/BtnSBP"
-        android:layout_width="200dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="10dp"
-        android:backgroundTint="#8DBBBD"
-        android:drawableTop="@drawable/logo_sbp"
-        android:text="SBP Trial"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/BtnSPMRSM" />
 
     <Button
         android:id="@+id/BtnSPM"
         android:layout_width="200dp"
         android:layout_height="150dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginBottom="388dp"
         android:backgroundTint="#8DBBBD"
         android:drawableTop="@drawable/spm_removebg_preview__3_"
         android:text="Sijil Pelajaran Malaysia (SPM)"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/BtnSBP"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
