@@ -9,25 +9,37 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
+import androidx.viewpager.widget.ViewPager;
+
 import com.example.aotg_v1.databinding.ActivityMainBinding;
 import android.os.CountDownTimer;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.Locale;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;
 
-    private static final long START_TIME_IN_MILLIS = 600000;
+    private static final long START_TIME_IN_MILLIS = 1500000;
     private TextView mTextViewCountDown;
     private Button mButtonStartPause;
     private Button mButtonReset;
     private CountDownTimer mCountDownTimer;
     private boolean mTimerRunning;
     private long mTimeLeftInMillis = START_TIME_IN_MILLIS;
+
+    ViewPager viewPager;
+    //add images from drawable to array
+    int images[] = {R.drawable.imageviewer1, R.drawable.imageviewer2, R.drawable.imageviewer3, R.drawable.imageviewer4};
+
+    int currentPageCunter = 0;
+
 
     @SuppressLint("WrongViewCast")
     @Override
@@ -61,6 +73,9 @@ public class MainActivity extends AppCompatActivity {
                     startTimer();
                 }
             }
+
+
+
         });
 
         mButtonReset.setOnClickListener(new View.OnClickListener() {
@@ -71,6 +86,34 @@ public class MainActivity extends AppCompatActivity {
         });
 
         updateCountDownText();
+
+        //find view by id
+        viewPager = findViewById(R.id.viewpager);
+        //add adapter
+        viewPager.setAdapter(new SliderAdapter(images, MainActivity.this));
+
+        //auto change image
+        final Handler handler = new Handler();
+        final Runnable update  = new Runnable() {
+            @Override
+            public void run() {
+                if (currentPageCunter == images.length){
+                    currentPageCunter = 0 ;
+
+                }
+
+                viewPager.setCurrentItem(currentPageCunter++,true);
+            }
+        };
+
+        Timer timer = new Timer();
+        timer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                handler.post(update);
+            }
+        },2500,2500);
+
     }
     private void startTimer() {
         mCountDownTimer = new CountDownTimer(mTimeLeftInMillis, 1000) {
