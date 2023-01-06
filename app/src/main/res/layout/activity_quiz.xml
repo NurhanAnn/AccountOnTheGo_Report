@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0FFFF">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/btnname2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome Back,"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.133"
+            tools:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/btnname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amelia"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.202"
+            tools:textSize="30sp" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="198dp"
+            android:layout_height="138dp"
+            android:backgroundTint="#F0FFFF"
+            android:padding="10dp"
+            android:src="@drawable/test3wrdwall"
+            app:layout_constraintBottom_toTopOf="@+id/imageButton6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/imageButton4"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.975" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="198dp"
+            android:layout_height="138dp"
+            android:backgroundTint="#F0FFFF"
+            android:src="@drawable/kahoottestbutton"
+            app:layout_constraintBottom_toTopOf="@+id/imageButton5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.975" />
+
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="198dp"
+            android:layout_height="138dp"
+            android:layout_marginBottom="164dp"
+            android:backgroundTint="#F0FFFF"
+            android:src="@drawable/quizizztestbtn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.545"
+            app:layout_constraintStart_toEndOf="@+id/imageButton5" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="198dp"
+            android:layout_height="138dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="164dp"
+            android:backgroundTint="#F0FFFF"
+            android:src="@drawable/qnbanktestbutton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
