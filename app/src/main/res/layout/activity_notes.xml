@@ -27,6 +27,7 @@
         android:backgroundTint="#9F7878"
         android:drawableRight="@drawable/videos_zoom"
         android:text="videos"
+        android:onClick="openWebLink"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

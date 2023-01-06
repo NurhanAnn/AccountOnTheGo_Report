@@ -113,15 +113,10 @@
         app:layout_constraintVertical_bias="0.822" />
 
     <androidx.viewpager.widget.ViewPager
-        android:id="@+id/viewpager"
-        android:layout_width="395dp"
-        android:layout_height="95dp"
         android:layout_centerInParent="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.385">
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     </androidx.viewpager.widget.ViewPager>
 
