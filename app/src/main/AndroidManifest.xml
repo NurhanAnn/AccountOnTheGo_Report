@@ -13,6 +13,20 @@
         android:theme="@style/Theme.Aotg_v1"
         tools:targetApi="31">
         <activity
+            android:name=".TrialSPMRSM_2021"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".TrialSPMRSM_2020"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".RegisterActivity"
             android:exported="false"
             android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar">
@@ -35,14 +49,14 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".Pyears3"
+            android:name=".Pyears_spmrsm"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".Pyears2"
+            android:name=".Pyears_spm"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
