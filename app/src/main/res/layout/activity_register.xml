@@ -4,110 +4,154 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".RegisterActivity">
+
 
     <ImageView
-        android:id="@+id/logo_with_bg"
+        android:id="@+id/logo_with_bg2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="fitStart"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo_with_bg" />
+        app:srcCompat="@drawable/logo_with_bg_short" />
 
     <LinearLayout
-        android:id="@+id/linearLayout2"
+        android:id="@+id/bg_blue_rounded"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="250dp"
+        android:layout_marginTop="150dp"
         android:background="@drawable/background_rectangle_rounded"
-        android:divider="@drawable/divider"
+        android:divider="@drawable/divider2"
+        android:gravity="center_horizontal"
         android:orientation="vertical"
         android:paddingHorizontal="10dp"
         android:showDividers="middle"
-        android:gravity="center_horizontal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
 
         <EditText
             android:id="@+id/editTextTextPersonName"
             android:layout_width="200dp"
-            android:layout_height="48dp"
-            android:layout_marginTop="36dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="12dp"
             android:background="@drawable/type_icon"
             android:ems="10"
             android:hint="Username"
             android:includeFontPadding="false"
             android:inputType="textPersonName"
             android:paddingStart="10dp"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
-            android:textColorHint="#5E8297"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:textColorHint="#38B6FF"
+            android:textSize="12sp"
             app:layout_constraintEnd_toEndOf="@+id/bg_blue_rounded"
-            app:layout_constraintHorizontal_bias="0.467"
+            app:layout_constraintHorizontal_bias="0.461"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/bg_blue_rounded" />
 
         <EditText
             android:id="@+id/editTextTextPersonName2"
             android:layout_width="200dp"
-            android:layout_height="48dp"
-            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
             android:background="@drawable/type_icon"
             android:ems="10"
             android:hint="Password"
             android:inputType="textPersonName"
             android:paddingStart="10dp"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
-            android:textColorHint="#5E8297"
-            app:layout_constraintBottom_toTopOf="@+id/btn_login"
-            app:layout_constraintEnd_toEndOf="@+id/bg_blue_rounded"
-            app:layout_constraintStart_toStartOf="@+id/bg_blue_rounded"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:textColorHint="#38B6FF"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName3"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/type_icon"
+            android:ems="10"
+            android:hint="Repeat password"
+            android:inputType="textPersonName"
+            android:paddingStart="10dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:textColorHint="#38B6FF"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName4"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/type_icon"
+            android:ems="10"
+            android:hint="Full name"
+            android:inputType="textPersonName"
+            android:paddingStart="10dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:textColorHint="#38B6FF"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName5"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/type_icon"
+            android:ems="10"
+            android:hint="Age"
+            android:inputType="textPersonName"
+            android:paddingStart="10dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:textColorHint="#38B6FF"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName6"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/type_icon"
+            android:ems="10"
+            android:hint="Education Background"
+            android:inputType="textPersonName"
+            android:paddingStart="10dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:textColorHint="#38B6FF"
+            android:textSize="12sp" />
 
         <Button
             android:id="@+id/btn_login"
-            android:layout_width="wrap_content"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="32dp"
-            android:layout_weight="2"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
             android:background="@drawable/button_bg"
             android:backgroundTint="#004AAD"
-            android:text="Login"
-            app:layout_constraintBottom_toBottomOf="@+id/bg_blue_rounded"
-            app:layout_constraintEnd_toEndOf="@+id/bg_blue_rounded"
-            app:layout_constraintStart_toStartOf="@+id/bg_blue_rounded" />
-
+            android:text="Register" />
 
     </LinearLayout>
-
-<!--    <ImageView-->
-<!--        android:id="@+id/bg_blue_rounded"-->
-<!--        android:layout_width="0dp"-->
-<!--        android:layout_height="0dp"-->
-<!--        android:layout_marginTop="250dp"-->
-<!--        android:layout_marginEnd="150dp"-->
-<!--        android:layout_marginBottom="200dp"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.0"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="@+id/logo_with_bg"-->
-<!--        app:layout_constraintVertical_bias="0.52"-->
-<!--        app:srcCompat="@drawable/background_rectangle_rounded" />-->
-
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="0dp"
-        android:layout_height="82dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="116dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/linearLayout2"
-        app:layout_constraintTop_toTopOf="@+id/linearLayout2"
-        app:srcCompat="@drawable/or" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/bg_blue_rounded"
+        app:layout_constraintTop_toTopOf="@+id/bg_blue_rounded"
+        app:srcCompat="@drawable/or"
+        tools:ignore="MissingConstraints" />
+
+
+
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="57dp"
@@ -121,8 +165,9 @@
         android:id="@+id/imageView4"
         android:layout_width="0dp"
         android:layout_height="30dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="36dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView2"
@@ -142,22 +187,20 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="30dp"
-        android:text="Don't have an account?"
+        android:layout_marginBottom="35dp"
+        android:text="Already have an account?"
         android:textColor="#000000"
         android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="@+id/logo_with_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintHorizontal_bias="0.478"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+        app:layout_constraintTop_toBottomOf="@+id/bg_blue_rounded" />
 
     <TextView
-        android:id="@+id/registerText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Register"
+        android:text="Log in"
         android:textColor="#004AAD"
         android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="@+id/textView2"
@@ -173,5 +216,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/faq_icon" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
