@@ -14,4 +14,6 @@
     <string name="FAQ_3_a">Yes, it is in the notes section of the app. All the formula for the entire syllabus of accounting is compiled there. But it is highly recommended for you to rewrite the formula on your own to make sure you understand which of the formula is for what question.</string>
     <string name="FAQ_4_q">Can I upload my notes in the app so that it is easier for me to refer to it while I am doing practice?</string>
     <string name="FAQ_4_a">Unfortunately, we are still in development of allowing user uploading their own study notes along with tips, extra questions, and own-derived formula. We will be notifying our user as soon as we have the features deployed!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -4,8 +4,11 @@ import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -96,15 +99,15 @@ public class MainActivity extends AppCompatActivity {
 
         //auto change image
         final Handler handler = new Handler();
-        final Runnable update  = new Runnable() {
+        final Runnable update = new Runnable() {
             @Override
             public void run() {
-                if (currentPageCunter == images.length){
-                    currentPageCunter = 0 ;
+                if (currentPageCunter == images.length) {
+                    currentPageCunter = 0;
 
                 }
 
-                viewPager.setCurrentItem(currentPageCunter++,true);
+                viewPager.setCurrentItem(currentPageCunter++, true);
             }
         };
 
@@ -114,9 +117,12 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 handler.post(update);
             }
-        },2500,2500);
+        }, 2500, 2500);
+
+
 
     }
+
 
 
     private void startTimer() {
