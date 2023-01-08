@@ -13,4 +13,37 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="BottomNavigation">
+        <item name="android:background">?attr/colorSurface</item>
+        <item name="backgroundTint">@null</item>
+        <item name="elevation">@dimen/m3_sys_elevation_level2</item>
+        <item name="itemTextAppearanceInactive">?attr/textAppearanceCaption</item>
+        <item name="itemTextAppearanceActive">?attr/textAppearanceCaption</item>
+        <item name="itemRippleColor">@color/mtrl_navigation_bar_colored_ripple_color</item>
+        <item name="itemIconTint">@color/mtrl_navigation_bar_colored_item_tint</item>
+        <item name="itemTextColor">@color/mtrl_navigation_bar_colored_item_tint</item>
+        <item name="itemPaddingTop">@dimen/m3_bottom_nav_item_padding_top</item>
+        <item name="itemPaddingBottom">@dimen/m3_bottom_nav_item_padding_bottom</item>
+        <item name="android:minHeight">@dimen/m3_bottom_nav_min_height</item>
+        <item name="enforceTextAppearance">true</item>
+        <item name="enforceMaterialTheme">true</item>
+        <item name="labelVisibilityMode">labeled</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <!-- This code is for changing the color of the bar. -->
+        <!-- Type your colour code which you want to set in colorPrimary item -->
+        <item name="colorPrimary">#112a46</item>
+    </style>
 </resources>

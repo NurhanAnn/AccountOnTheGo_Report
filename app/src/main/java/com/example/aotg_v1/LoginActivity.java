@@ -51,5 +51,15 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
+        //login to feedback
+        move_login2feedback = findViewById((R.id.feedback_Icon));
+        move_login2feedback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoginActivity.this, FeedbackActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }

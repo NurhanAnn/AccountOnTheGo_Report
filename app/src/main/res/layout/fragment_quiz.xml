@@ -4,19 +4,73 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.quiz.QuizFragment">
+    android:background="#BEDCED"
+    tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/text_dashboard"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
+    <Button
+        android:id="@+id/bkahoot"
+        android:layout_width="349dp"
+        android:layout_height="149dp"
+        android:background="@drawable/button_bg"
+        android:backgroundTint="#74AA8D"
+        android:drawableRight="@drawable/kahoot_zoom"
+        android:text="KAHOOT"
+        android:onClick="kahootsite"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.048" />
+
+    <Button
+        android:id="@+id/bquestionbank"
+        android:layout_width="349dp"
+        android:layout_height="149dp"
+        android:background="@drawable/button_bg"
+        android:onClick="questionbanksite"
+        android:backgroundTint="#9F7878"
+        android:drawableRight="@drawable/question_bank_zoom"
+        android:text="QUESTION BANK"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.891" />
+
+    <Button
+        android:id="@+id/bwordwall"
+        android:layout_width="349dp"
+        android:layout_height="149dp"
+        android:background="@drawable/button_bg"
+        android:backgroundTint="#5E44A5"
+        android:onClick="wordwallsite"
+        android:drawableRight="@drawable/wordwall_zoom"
+        android:text="WORDWALL"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.611" />
+
+    <Button
+        android:id="@+id/bquizziz"
+        android:layout_width="349dp"
+        android:layout_height="149dp"
+        android:background="@drawable/button_bg"
+        android:backgroundTint="#9A2DAC"
+        android:drawableRight="@drawable/quizziz_zoom"
+        android:text="QUIZZIZ"
+        android:onClick="quizizzsite"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.324" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

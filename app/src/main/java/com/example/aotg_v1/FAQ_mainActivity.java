@@ -7,8 +7,11 @@ import android.os.Bundle;
 import android.transition.AutoTransition;
 import android.transition.TransitionManager;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class FAQ_mainActivity extends AppCompatActivity {
 
@@ -47,6 +50,21 @@ public class FAQ_mainActivity extends AppCompatActivity {
         Question4 = findViewById(R.id.question4);
 
         Question4.getLayoutTransition().enableTransitionType(LayoutTransition.CHANGING);
+
+        EditText ETFeedback = findViewById(R.id.ETFeedback3);
+        Button BtnFeedback = findViewById(R.id.btnFeedback2);
+
+        //the button OnClickListener to toast a message and share the cashback code is user has entered the feedback.
+        BtnFeedback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view){
+                String message = "Thank you for your question!";
+                if (!ETFeedback.getText().toString().isEmpty())
+                    message = message + "Should it be relevant we will add it to our FAQ list.";
+                Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG).show();
+
+            }
+        });
     }
 
     public void expand1(View view) {

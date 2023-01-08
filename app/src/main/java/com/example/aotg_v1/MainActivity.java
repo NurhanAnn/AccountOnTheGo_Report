@@ -1,6 +1,10 @@
 package com.example.aotg_v1;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
@@ -12,8 +16,10 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import com.example.aotg_v1.ui.home.HomeFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -26,6 +32,7 @@ import com.example.aotg_v1.databinding.ActivityMainBinding;
 import java.util.Locale;
 import java.util.Timer;
 import java.util.TimerTask;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
@@ -34,6 +41,7 @@ import android.os.Handler;
 
 import java.util.Timer;
 import java.util.TimerTask;
+
 public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;
@@ -55,20 +63,37 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
 
         BottomNavigationView navView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.navigation_home, R.id.navigation_quiz, R.id.navigation_profile)
+                R.id.navigation_home,
+                R.id.navigation_quiz,
+                R.id.navigation_profile)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_activity_main);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);
 
+//        setContentView(R.layout.activity_main);
+//
+//        BottomNavigationView navView = findViewById(R.id.nav_view);
+//        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_activity_main);
+//
+//        AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
+//                R.id.navigation_home,
+//                R.id.navigation_quiz,
+//                R.id.navigation_profile
+//
+//        ).build();
+//        NavigationUI.setupActionBarWithNavController(this, navController);
+//        NavigationUI.setupWithNavController(binding.navView, navController);
+
+        //pomodoro timer section
         mTextViewCountDown = findViewById(R.id.text_view_countdown);
         mButtonStartPause = findViewById(R.id.button_start_pause);
         mButtonReset = findViewById(R.id.button_reset);
@@ -92,6 +117,8 @@ public class MainActivity extends AppCompatActivity {
 
         updateCountDownText();
 
+
+        //imageslider section
         //find view by id
         viewPager = findViewById(R.id.viewpager);
         //add adapter
@@ -117,12 +144,30 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 handler.post(update);
             }
-        }, 2500, 2500);
-
-
+        }, 3000, 3000);
 
     }
 
+    //quiz section
+    public void kahootsite(View view) {
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://kahoot.it/"));
+        startActivity(browserIntent);
+    }
+
+    public void wordwallsite(View view) {
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://wordwall.net/"));
+        startActivity(browserIntent);
+    }
+
+    public void questionbanksite(View view) {
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://trial.spmpaper.me/?dir=Prinsip%20Perakaunan"));
+        startActivity(browserIntent);
+    }
+
+    public void quizizzsite(View view) {
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://quizizz.com/?lng=en"));
+        startActivity(browserIntent);
+    }
 
 
     private void startTimer() {

@@ -1,5 +1,7 @@
 package com.example.aotg_v1.ui.quiz;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -27,6 +29,7 @@ public class QuizFragment extends Fragment {
         //quizViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
+
 
     @Override
     public void onDestroyView() {

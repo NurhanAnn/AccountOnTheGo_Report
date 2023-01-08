@@ -6,7 +6,70 @@
     android:layout_height="match_parent"
     tools:context=".FAQ_mainActivity">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2">
+
+        <Button
+            android:id="@+id/btnFeedback2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/button_bg"
+            android:backgroundTint="#112A46"
+            android:fontFamily="sans-serif-medium"
+            android:paddingHorizontal="10dp"
+            android:text="Submit feedback"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="350dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/rectangle_corners_rounded" />
+
+        <EditText
+            android:id="@+id/ETFeedback3"
+            android:layout_width="330dp"
+            android:layout_height="120dp"
+            android:background="@drawable/feedback_background"
+            android:ems="10"
+            android:fontFamily="sans-serif-medium"
+            android:hint="Tell us about your experience using \nthe app..."
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+            app:layout_constraintEnd_toEndOf="@+id/imageView3"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="@+id/imageView3"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit your own question"
+            android:textSize="24sp"
+            android:textColor="#112A46"
+            app:layout_constraintBottom_toTopOf="@+id/ETFeedback3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="450dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -42,9 +105,10 @@
                         android:id="@+id/FAQ_1_q"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
                         android:onClick="expand1"
                         android:text="@string/FAQ_1_q"
-                        android:textColor="@color/black"
+                        android:textColor="#112A46"
                         android:textSize="20sp"
                         android:textStyle="bold" />
 
@@ -81,9 +145,10 @@
                         android:id="@+id/FAQ_2_q"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
                         android:onClick="expand2"
                         android:text="@string/FAQ_2_q"
-                        android:textColor="@color/black"
+                        android:textColor="#112A46"
                         android:textSize="20sp"
                         android:textStyle="bold" />
 
@@ -120,9 +185,10 @@
                         android:id="@+id/FAQ_3_q"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
                         android:onClick="expand3"
                         android:text="@string/FAQ_3_q"
-                        android:textColor="@color/black"
+                        android:textColor="#112A46"
                         android:textSize="20sp"
                         android:textStyle="bold" />
 

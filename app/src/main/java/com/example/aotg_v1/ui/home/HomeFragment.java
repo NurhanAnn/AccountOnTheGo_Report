@@ -2,6 +2,7 @@ package com.example.aotg_v1.ui.home;
 
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,17 +14,56 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.Navigation;
+import androidx.viewpager.widget.ViewPager;
 
 import com.example.aotg_v1.R;
 import com.example.aotg_v1.databinding.FragmentHomeBinding;
+
+import java.util.Timer;
+import java.util.TimerTask;
 //import java.util.Locale;
 
 public class HomeFragment extends Fragment {
 
     private FragmentHomeBinding binding;
 
+    ViewPager viewPager;
+    //add images from drawable to array
+    int images[] = {R.drawable.imageviewer1, R.drawable.imageviewer2, R.drawable.imageviewer3, R.drawable.imageviewer4};
+    int currentPageCounter = 0;
+
+
+    /*@Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        //auto change image
+        final Handler handler = new Handler();
+        final Runnable update = new Runnable() {
+            @Override
+            public void run() {
+                if (currentPageCunter == images.length) {
+                    currentPageCunter = 0;
+
+                }
+
+                viewPager.setCurrentItem(currentPageCunter++, true);
+            }
+        };
+
+        Timer timer = new Timer();
+        timer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                handler.post(update);
+            }
+        }, 3000, 3000);
+    }*/
+
+
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
+
         HomeViewModel homeViewModel =
                 new ViewModelProvider(this).get(HomeViewModel.class);
 
@@ -37,18 +77,21 @@ public class HomeFragment extends Fragment {
 
 
     }
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+    }
+
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState){
 
         //Navigate from homeFragment to Pyear1activity via button
         Button BtnPyears = view.findViewById(R.id.BtnPyears);
-        View.OnClickListener OCLPyears = new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                Navigation.findNavController(view).navigate(R.id.BtnPyears);
-            }
-        };
-        BtnPyears.setOnClickListener(OCLPyears);
+        BtnPyears.setOnClickListener(v -> {
+            Navigation.findNavController(v).navigate(R.id.BtnPyears);
+        });
 
         //Navigate from homeFragment to Notes1activity via button
         Button BtnNotes = view.findViewById(R.id.BtnNotes);
@@ -59,6 +102,8 @@ public class HomeFragment extends Fragment {
             }
         };
         BtnNotes.setOnClickListener(OCLNotes);
+
+
     }
 
 

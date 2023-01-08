@@ -10,6 +10,7 @@ import android.widget.Button;
 public class Pyears extends AppCompatActivity {
 
     private Button move_pyears2pyearsspmrsm;
+    private Button move_pyears2pyearsspm;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +22,16 @@ public class Pyears extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Pyears.this, Pyears_spmrsm.class);
+                startActivity(intent);
+            }
+        });
+
+        //from Pyears to PyearsSPM
+        move_pyears2pyearsspm = findViewById(R.id.BtnSPM);
+        move_pyears2pyearsspm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Pyears.this, Pyears_spm.class);
                 startActivity(intent);
             }
         });

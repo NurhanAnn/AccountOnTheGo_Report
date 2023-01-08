@@ -32,4 +32,19 @@
         android:name="com.example.aotg_v1.Notes"
         android:label="activity_notes"
         tools:layout="@layout/activity_notes" />
+    <activity
+        android:id="@+id/navigation_quizziz"
+        android:name="com.example.aotg_v1.QuizzizActivity"
+        android:label="activity_quizziz"
+        tools:layout="@layout/activity_quizziz" />
+    <activity
+        android:id="@+id/navigation_kahoot"
+        android:name="com.example.aotg_v1.KahootActivity"
+        android:label="activity_kahoot"
+        tools:layout="@layout/activity_kahoot" />
+    <activity
+        android:id="@+id/navigation_wordwall"
+        android:name="com.example.aotg_v1.WordwallActivity"
+        android:label="WordWall Marks"
+        tools:layout="@layout/activity_wordwall" />
 </navigation>

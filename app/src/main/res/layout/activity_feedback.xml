@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FeedbackActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#BEDCED"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/logo_with_bg_short"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="1dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="294dp"
+        android:layout_height="295dp"
+        android:layout_marginTop="210dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rectangle_corners_rounded" />
+
+    <RatingBar
+        android:id="@+id/RateBarFeedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:progressTint="#FFEB3B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="0.051" />
+
+    <TextView
+        android:id="@+id/Text1"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Send us a feedback of your experience!"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#112A46"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tellusmore"
+        android:layout_width="318dp"
+        android:layout_height="132dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="We appreciate every opinion of our user and hope to refine our app to make your experience better."
+        android:textAlignment="center"
+        android:textColor="#112A46"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="0.127" />
+
+    <Button
+        android:id="@+id/BtnFeedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bg"
+        android:backgroundTint="#BEDCED"
+        android:fontFamily="sans-serif-medium"
+        android:paddingHorizontal="10dp"
+        android:text="Submit feedback"
+        android:textAllCaps="false"
+        android:textColor="#112A46"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="@+id/ETFeedback"
+        app:layout_constraintStart_toStartOf="@+id/ETFeedback"
+        app:layout_constraintTop_toBottomOf="@+id/ETFeedback"
+        app:layout_constraintVertical_bias="0.45" />
+
+    <EditText
+        android:id="@+id/ETFeedback"
+        android:layout_width="226dp"
+        android:layout_height="136dp"
+        android:background="@drawable/feedback_background"
+        android:ems="10"
+        android:fontFamily="sans-serif-medium"
+        android:hint="Tell us about your experience using \nthe app..."
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/RateBarFeedback"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

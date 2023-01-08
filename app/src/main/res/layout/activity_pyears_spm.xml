@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#bedced"
     tools:context=".Pyears_spm">
 
     <TextView
@@ -13,9 +14,11 @@
         android:layout_marginStart="57dp"
         android:layout_marginTop="144dp"
         android:layout_marginEnd="241dp"
-        android:text="Choose year"
+        android:fontFamily="sans-serif-medium"
+        android:text="Choose year :"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="20sp"
+        android:textColor="#112A46"
+        android:textSize="35sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -26,11 +29,13 @@
         android:id="@+id/BTN2020"
         android:layout_width="200dp"
         android:layout_height="130dp"
-        android:layout_marginTop="37dp"
+        android:layout_marginTop="84dp"
         android:layout_marginEnd="104dp"
-        android:backgroundTint="#8DBBBD"
+        android:background="@drawable/button_bg"
+        android:backgroundTint="#112a46"
         android:text="2020"
-        android:textColor="#000000"
+        android:textColor="#bedced"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TVYears" />
 
@@ -38,12 +43,14 @@
         android:id="@+id/BTN2021"
         android:layout_width="200dp"
         android:layout_height="130dp"
+        android:layout_marginTop="72dp"
         android:layout_marginEnd="104dp"
-        android:layout_marginBottom="224dp"
-        android:backgroundTint="#8DBBBD"
+        android:background="@drawable/button_bg"
+        android:backgroundTint="#112a46"
         android:text="2021"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:textColor="#bedced"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BTN2020" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

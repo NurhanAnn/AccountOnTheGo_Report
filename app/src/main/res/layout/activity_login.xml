@@ -10,6 +10,7 @@
         android:id="@+id/logo_with_bg"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#BEDCED"
         android:scaleType="fitStart"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -18,68 +19,61 @@
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="299dp"
+        android:layout_height="268dp"
         android:layout_marginTop="250dp"
-        android:background="@drawable/background_rectangle_rounded"
+        android:background="@drawable/rectangle_corners_rounded"
         android:divider="@drawable/divider"
+        android:gravity="center_horizontal"
         android:orientation="vertical"
         android:paddingHorizontal="10dp"
         android:showDividers="middle"
-        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/input_username"
             android:layout_width="200dp"
-            android:layout_height="48dp"
+            android:layout_height="50dp"
             android:layout_marginTop="36dp"
             android:background="@drawable/type_icon"
             android:ems="10"
+            android:fontFamily="sans-serif-medium"
             android:hint="Username"
-            android:includeFontPadding="false"
             android:inputType="textPersonName"
             android:paddingStart="10dp"
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
-            android:textColorHint="#5E8297"
-            app:layout_constraintEnd_toEndOf="@+id/bg_blue_rounded"
-            app:layout_constraintHorizontal_bias="0.467"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/bg_blue_rounded" />
+            android:textColorHint="#7C8F9A" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName2"
+            android:id="@+id/input_password"
             android:layout_width="200dp"
-            android:layout_height="48dp"
-            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:layout_marginTop="3dp"
             android:background="@drawable/type_icon"
             android:ems="10"
+            android:fontFamily="sans-serif-medium"
             android:hint="Password"
             android:inputType="textPersonName"
             android:paddingStart="10dp"
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
-            android:textColorHint="#5E8297"
-            app:layout_constraintBottom_toTopOf="@+id/btn_login"
-            app:layout_constraintEnd_toEndOf="@+id/bg_blue_rounded"
-            app:layout_constraintStart_toStartOf="@+id/bg_blue_rounded"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+            android:textColorHint="#7C8F9A" />
 
         <Button
             android:id="@+id/btn_login"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="127dp"
+            android:layout_height="0dp"
             android:layout_marginBottom="32dp"
             android:layout_weight="2"
             android:background="@drawable/button_bg"
-            android:backgroundTint="#004AAD"
+            android:backgroundTint="#BEDCED"
             android:text="Login"
-            app:layout_constraintBottom_toBottomOf="@+id/bg_blue_rounded"
-            app:layout_constraintEnd_toEndOf="@+id/bg_blue_rounded"
-            app:layout_constraintStart_toStartOf="@+id/bg_blue_rounded" />
+            android:textColor="#112A46"
+            android:textSize="17sp" />
 
 
     </LinearLayout>
@@ -101,24 +95,7 @@
 
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="0dp"
-        android:layout_height="82dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/linearLayout2"
-        app:layout_constraintTop_toTopOf="@+id/linearLayout2"
-        app:srcCompat="@drawable/or" />
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="57dp"
-        android:layout_height="49dp"
-        app:layout_constraintEnd_toEndOf="@+id/imageView2"
-        app:layout_constraintStart_toStartOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:srcCompat="@drawable/googlelogo" />
-
-    <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/feedback_Icon"
         android:layout_width="0dp"
         android:layout_height="30dp"
         android:layout_marginEnd="10dp"
@@ -134,9 +111,9 @@
         android:layout_height="wrap_content"
         android:text="Feedback"
         android:textColor="#000000"
-        app:layout_constraintEnd_toEndOf="@+id/imageView4"
-        app:layout_constraintStart_toStartOf="@+id/imageView4"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        app:layout_constraintEnd_toEndOf="@+id/feedback_Icon"
+        app:layout_constraintStart_toStartOf="@+id/feedback_Icon"
+        app:layout_constraintTop_toBottomOf="@+id/feedback_Icon" />
 
     <TextView
         android:id="@+id/textView2"
@@ -144,6 +121,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="30dp"
+        android:fontFamily="sans-serif-medium"
         android:text="Don't have an account?"
         android:textColor="#000000"
         android:textSize="20dp"
@@ -157,8 +135,9 @@
         android:id="@+id/registerText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
         android:text="Register"
-        android:textColor="#004AAD"
+        android:textColor="#112A46"
         android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="@+id/textView2"
         app:layout_constraintStart_toStartOf="@+id/textView2"
