@@ -1,5 +1,7 @@
 package com.example.aotg_v1;
 
+import static com.example.aotg_v1.R.id.BtnQuestion;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.animation.LayoutTransition;
@@ -23,10 +25,17 @@ public class FAQ_mainActivity extends AppCompatActivity {
     LinearLayout Question3;
     TextView FAQanswer4;
     LinearLayout Question4;
+    DBHelperFAQ DB;
+    EditText ETQuestion;
+    Button BtnQuestion;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_faq_main);
+
+        ETQuestion = findViewById(R.id.ETQuestion);
+        BtnQuestion = findViewById(R.id.BtnQuestion);
+        DB = new DBHelperFAQ(this);
         //question1
         FAQanswer1 = findViewById(R.id.FAQ_1_a);
         Question1 = findViewById(R.id.question1);
@@ -51,15 +60,17 @@ public class FAQ_mainActivity extends AppCompatActivity {
 
         Question4.getLayoutTransition().enableTransitionType(LayoutTransition.CHANGING);
 
-        EditText ETFeedback = findViewById(R.id.ETFeedback3);
-        Button BtnFeedback = findViewById(R.id.btnFeedback2);
+
 
         //the button OnClickListener to toast a message and share the cashback code is user has entered the feedback.
-        BtnFeedback.setOnClickListener(new View.OnClickListener() {
+        BtnQuestion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view){
+                String asked = ETQuestion.getText().toString();
+                System.out.println(asked);
                 String message = "Thank you for your question!";
-                if (!ETFeedback.getText().toString().isEmpty())
+                Boolean insert = DB.insertData(asked);
+                if (!ETQuestion.getText().toString().isEmpty())
                     message = message + "Should it be relevant we will add it to our FAQ list.";
                 Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG).show();
 

@@ -8,48 +8,28 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/IVProfilePic"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="160dp"
-        android:src="@android:drawable/ic_menu_gallery"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/IVSquareEduBack"
-        android:layout_width="150dp"
-        android:layout_height="180dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="52dp"
+        android:id="@+id/IVSquareAge"
+        android:layout_width="366dp"
+        android:layout_height="223dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="28dp"
         android:src="@drawable/rectangle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TVUserName" />
 
-    <ImageView
-        android:id="@+id/IVSquareAge"
-        android:layout_width="150dp"
-        android:layout_height="180dp"
-        android:layout_marginTop="216dp"
-        android:layout_marginEnd="216dp"
-        android:src="@drawable/rectangle"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <TextView
         android:id="@+id/TVUserName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="112dp"
+        android:layout_width="255dp"
+        android:layout_height="64dp"
         android:fontFamily="@font/amaranth_bold"
         android:text="User's Name"
+        android:textAlignment="center"
         android:textColor="#112A46"
-        android:textSize="34sp"
+        android:textSize="45sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/IVProfilePic" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings" />
 
     <TextView
         android:id="@+id/TVAge"
@@ -58,35 +38,39 @@
         android:fontFamily="@font/baloo_bhaijaan"
         android:text="AGE"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="20sp"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@id/IVSquareAge"
         app:layout_constraintEnd_toEndOf="@id/IVSquareAge"
-        app:layout_constraintHorizontal_bias="0.539"
+        app:layout_constraintHorizontal_bias="0.515"
         app:layout_constraintStart_toStartOf="@id/IVSquareAge"
         app:layout_constraintTop_toTopOf="@id/IVSquareAge"
-        app:layout_constraintVertical_bias="0.194" />
+        app:layout_constraintVertical_bias="0.075" />
 
     <TextView
         android:id="@+id/TVEduBack"
-        android:layout_width="104dp"
-        android:layout_height="46dp"
+        android:layout_width="352dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="@font/baloo_bhaijaan"
         android:text="EDUCATION BACKGROUND"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@id/IVSquareEduBack"
-        app:layout_constraintEnd_toEndOf="@id/IVSquareEduBack"
-        app:layout_constraintStart_toStartOf="@id/IVSquareEduBack"
-        app:layout_constraintTop_toTopOf="@id/IVSquareEduBack"
-        app:layout_constraintVertical_bias="0.201" />
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/IVSquareAge"
+        app:layout_constraintHorizontal_bias="0.857"
+        app:layout_constraintStart_toStartOf="@+id/IVSquareAge"
+        app:layout_constraintTop_toBottomOf="@+id/TVage" />
 
     <ImageView
         android:id="@+id/IVSquareMarks"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="112dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="116dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/IVSquareAge"
         app:srcCompat="@drawable/marksrectangle" />
@@ -97,24 +81,30 @@
         android:layout_height="50dp"
         android:background="@drawable/button_bg"
         android:backgroundTint="#112A46"
+        android:fontFamily="@font/baloo_bhaijaan"
         android:text="WordWall"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/KahootBtn"
         app:layout_constraintEnd_toEndOf="@+id/QuizzizBtn"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/QuizzizBtn"
-        app:layout_constraintTop_toBottomOf="@+id/QuizzizBtn" />
+        app:layout_constraintTop_toBottomOf="@+id/QuizzizBtn"
+        app:layout_constraintVertical_bias="0.52" />
 
     <Button
         android:id="@+id/QuizzizBtn"
         android:layout_width="285dp"
         android:layout_height="50dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/button_bg"
         android:backgroundTint="#112A46"
+        android:fontFamily="@font/baloo_bhaijaan"
         android:text="Quizziz"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/IVSquareMarks" />
@@ -123,14 +113,17 @@
         android:id="@+id/KahootBtn"
         android:layout_width="285dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="80dp"
+        android:layout_marginBottom="72dp"
         android:background="@drawable/button_bg"
         android:backgroundTint="#112A46"
+        android:fontFamily="@font/baloo_bhaijaan"
         android:text="Kahoot"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/WordwallBtn"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/WordwallBtn" />
 
     <TextView
@@ -148,5 +141,51 @@
         app:layout_constraintStart_toStartOf="@id/IVSquareMarks"
         app:layout_constraintTop_toTopOf="@id/IVSquareMarks"
         app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/TVage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/baloo_bhaijaan"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="27sp"
+        app:layout_constraintBottom_toBottomOf="@+id/IVSquareAge"
+        app:layout_constraintEnd_toEndOf="@+id/IVSquareAge"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="@+id/IVSquareAge"
+        app:layout_constraintTop_toTopOf="@+id/TVAge"
+        app:layout_constraintVertical_bias="0.278" />
+
+    <ImageButton
+        android:id="@+id/settings"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024"
+        app:srcCompat="@drawable/settings" />
+
+    <TextView
+        android:id="@+id/TVedubackground"
+        android:layout_width="151dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/baloo_bhaijaan"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/IVSquareAge"
+        app:layout_constraintEnd_toEndOf="@+id/TVEduBack"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="@+id/IVSquareAge"
+        app:layout_constraintTop_toBottomOf="@+id/TVEduBack"
+        app:layout_constraintVertical_bias="0.468" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

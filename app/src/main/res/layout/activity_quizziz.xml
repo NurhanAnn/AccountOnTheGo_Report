@@ -8,19 +8,19 @@
 
 
     <TextView
-        android:id="@+id/percentage"
+        android:id="@+id/percentageQ"
         android:layout_width="121dp"
         android:layout_height="84dp"
         android:fontFamily="sans-serif-medium"
         android:textAlignment="center"
         android:textColor="#112A46"
-        android:textSize="55dp"
+        android:textSize="70sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/percent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logoquizziz"
-        app:layout_constraintVertical_bias="0.154" />
+        app:layout_constraintVertical_bias="0.118" />
 
     <TextView
         android:id="@+id/percent"
@@ -30,82 +30,31 @@
         android:text="%"
         android:textAlignment="center"
         android:textColor="#112A46"
-        android:textSize="55dp"
+        android:textSize="70sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.659"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logoquizziz"
-        app:layout_constraintVertical_bias="0.154" />
+        app:layout_constraintVertical_bias="0.118" />
 
     <TextView
-        android:id="@+id/TVtraWW"
+        android:id="@+id/TVtraQ"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-medium"
         android:text="Total Right Answers:"
         android:textAlignment="center"
         android:textColor="#112A46"
-        android:textSize="25dp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/percentage"
-        app:layout_constraintVertical_bias="0.064" />
-
-    <EditText
-        android:id="@+id/tRightAnswerWW"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:fontFamily="sans-serif-medium"
-        android:hint="Enter Number"
-        android:inputType="number"
-        android:minHeight="48dp"
-        android:textAlignment="center"
-        android:textColor="#112A46"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TVtraWW"
-        app:layout_constraintVertical_bias="0.027" />
-
-    <TextView
-        android:id="@+id/TVqWW"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-medium"
-        android:text="Total Questions:"
-        android:textAlignment="center"
-        android:textColor="#112A46"
-        android:textSize="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tRightAnswerWW"
-        app:layout_constraintVertical_bias="0.083" />
-
-    <EditText
-        android:id="@+id/tQuestionWW"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Enter Number"
-        android:inputType="number"
-        android:minHeight="48dp"
-        android:textAlignment="center"
-        android:textColor="#112A46"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.512"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TVqWW"
-        app:layout_constraintVertical_bias="0.048"
-        android:fontFamily="sans-serif-medium" />
+        app:layout_constraintTop_toBottomOf="@+id/percentageQ"
+        app:layout_constraintVertical_bias="0.084" />
 
     <Button
-        android:id="@+id/submitWW"
+        android:id="@+id/submitQ"
         android:layout_width="106dp"
         android:layout_height="44dp"
         android:backgroundTint="#112A46"
@@ -116,8 +65,62 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tQuestionWW"
-        app:layout_constraintVertical_bias="0.164" />
+        app:layout_constraintTop_toBottomOf="@+id/tQuestionQ"
+        app:layout_constraintVertical_bias="0.215" />
+
+    <EditText
+        android:id="@+id/tQuestionQ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="sans-serif-medium"
+        android:hint="Enter Number"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:textColor="#112A46"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVqQ"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/TVqQ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="Total Questions:"
+        android:textAlignment="center"
+        android:textColor="#112A46"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tRightAnswerQ"
+        app:layout_constraintVertical_bias="0.086" />
+
+    <EditText
+        android:id="@+id/tRightAnswerQ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="sans-serif-medium"
+        android:hint="Enter Number"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:textColor="#112A46"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVtraQ"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/logoquizziz"

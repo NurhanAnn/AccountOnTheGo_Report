@@ -12,6 +12,11 @@ import android.widget.Toast;
 
 public class FeedbackActivity extends AppCompatActivity {
 
+    EditText ETFeedback;
+    Button BtnFeedback;
+    DBHelperFeedback DB;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,14 +24,18 @@ public class FeedbackActivity extends AppCompatActivity {
         //Connect with UI Widget RateBarFeedback, TVRating, ETFeedback, BtnFeedback
         RatingBar RateBarFeedback = findViewById(R.id.RateBarFeedback);
 //        TextView TVRating = findViewById(R.id.TVRating);
-        EditText ETFeedback = findViewById(R.id.ETFeedback);
-        Button BtnFeedback = findViewById(R.id.BtnFeedback);
+        ETFeedback = findViewById(R.id.ETFeedback);
+        BtnFeedback = findViewById(R.id.BtnFeedback);
+        DB = new DBHelperFeedback(this);
 
         //the button OnClickListener to toast a message and share the cashback code is user has entered the feedback.
         BtnFeedback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view){
+                String feedback = ETFeedback.getText().toString();
+                System.out.println(feedback);
                 String message = "Thank you for your feedback.";
+                Boolean insert = DB.insertData(feedback);
                 if (!ETFeedback.getText().toString().isEmpty())
                     message = message + "We will make sure to improve our app!";
                 Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG).show();

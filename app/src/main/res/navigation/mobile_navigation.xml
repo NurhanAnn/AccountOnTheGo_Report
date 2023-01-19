@@ -47,4 +47,9 @@
         android:name="com.example.aotg_v1.WordwallActivity"
         android:label="WordWall Marks"
         tools:layout="@layout/activity_wordwall" />
+    <activity
+        android:id="@+id/navigation_settings"
+        android:name="com.example.aotg_v1.SettingsActivity"
+        android:label="activity_settings"
+        tools:layout="@layout/activity_settings" />
 </navigation>

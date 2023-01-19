@@ -13,7 +13,7 @@
         app:layout_constraintTop_toBottomOf="@+id/scrollView2">
 
         <Button
-            android:id="@+id/btnFeedback2"
+            android:id="@+id/BtnQuestion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
@@ -22,7 +22,7 @@
             android:backgroundTint="#112A46"
             android:fontFamily="sans-serif-medium"
             android:paddingHorizontal="10dp"
-            android:text="Submit feedback"
+            android:text="Submit question"
             android:textAllCaps="false"
             android:textColor="#ffffff"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -33,13 +33,14 @@
             android:layout_width="350dp"
             android:layout_height="140dp"
             android:layout_marginTop="50dp"
+            app:layout_constraintBottom_toTopOf="@+id/BtnQuestion"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/rectangle_corners_rounded" />
 
         <EditText
-            android:id="@+id/ETFeedback3"
+            android:id="@+id/ETQuestion"
             android:layout_width="330dp"
             android:layout_height="120dp"
             android:background="@drawable/feedback_background"
@@ -61,7 +62,7 @@
             android:text="Submit your own question"
             android:textSize="24sp"
             android:textColor="#112A46"
-            app:layout_constraintBottom_toTopOf="@+id/ETFeedback3"
+            app:layout_constraintBottom_toTopOf="@+id/ETQuestion"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -74,7 +75,7 @@
         android:layout_height="450dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cat">
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:id="@+id/linearLayout"
@@ -250,21 +251,4 @@
     </ScrollView>
 
 
-
-    <ImageView
-        android:id="@+id/cat"
-        android:layout_width="match_parent"
-        android:layout_height="55dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/appbar_bg" />
-
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="83dp"
-        android:layout_height="60dp"
-        app:layout_constraintStart_toStartOf="@+id/cat"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/faq_up" />
 </androidx.constraintlayout.widget.ConstraintLayout>

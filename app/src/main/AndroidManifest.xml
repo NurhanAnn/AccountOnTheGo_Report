@@ -13,6 +13,42 @@
         android:theme="@style/AppTheme"
         tools:targetApi="31">
         <activity
+            android:name=".SPM_2021"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".SPM_2020"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false"
+            android:label="Settings">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ResetActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".PasswordActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".KahootActivity"
             android:exported="false"
             android:label="Kahoot Marks">
@@ -39,7 +75,8 @@
         <activity
             android:name=".FeedbackActivity"
             android:exported="false"
-            android:label="WordWall Marks">
+            android:label="Feedback"
+            android:windowSoftInputMode="adjustResize">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -98,7 +135,8 @@
         <activity
             android:name=".FAQ_mainActivity"
             android:exported="false"
-            android:label="Quizziz Marks">
+            android:label="FAQ"
+            android:windowSoftInputMode="adjustPan">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
